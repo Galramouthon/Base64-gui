@@ -137,7 +137,7 @@ class SecondWidget1(QtWidgets.QWidget):
     def change_stack1(self):
         self.parent().stack.setCurrentIndex(1)
 
-# 3 이미지 디코딩 페이지
+# 3 이미지 코딩 페이지
 class SecondWidget2(QtWidgets.QWidget):
     def __init__(self, parent=None):
         super().__init__(parent=parent)
