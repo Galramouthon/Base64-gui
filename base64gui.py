@@ -1,7 +1,7 @@
-from PySide2 import QtWidgets
-from PySide2.QtWidgets import QPushButton, QWidget, QLabel, QTextEdit, QTextBrowser, QMessageBox, QApplication, QFileDialog, QDialog
-from PySide2.QtCore import QCoreApplication
-from PySide2.QtGui import Qt, QIcon
+from PySide6 import QtWidgets
+from PySide6.QtWidgets import QPushButton, QWidget, QLabel, QTextEdit, QTextBrowser, QMessageBox, QApplication, QFileDialog, QDialog
+from PySide6.QtCore import QCoreApplication
+from PySide6.QtGui import Qt, QIcon
 from PIL import Image
 from io import BytesIO
 import sys
