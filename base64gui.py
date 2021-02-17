@@ -178,7 +178,7 @@ class SecondWidget2(QtWidgets.QWidget):
         f.write(byteform)
         f.close()
 
-        guidance = QMessageBox.information(self, 'base64(개발중)', '바탕화면에 base64encoding.bin 파일이 생성했습니다', QMessageBox.Ok)
+        guidance = QMessageBox.information(self, 'base64', '바탕화면에 base64encoding.bin 파일이 생성했습니다', QMessageBox.Ok)
         print('완료')
 
 
@@ -298,7 +298,7 @@ class SecondWidget5(QtWidgets.QWidget):
 
         im = Image.open(BytesIO(base64.b64decode(decoding)))
         im.save('C:/Users/'+user_name+'/Desktop/b64decode_images.png', 'PNG')
-        guidance = QMessageBox.information(self, 'base64(개발중)', '바탕화면에 b64decode_images.png 이 생성했습니다', QMessageBox.Ok)
+        guidance = QMessageBox.information(self, 'base64', '바탕화면에 b64decode_images.png 이 생성했습니다', QMessageBox.Ok)
         print("완료")
 
 class MainWindow(QtWidgets.QWidget):
