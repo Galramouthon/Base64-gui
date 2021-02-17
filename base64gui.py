@@ -1,5 +1,5 @@
 from PySide6 import QtWidgets
-from PySide6.QtWidgets import QPushButton, QWidget, QLabel, QTextEdit, QTextBrowser, QMessageBox, QApplication, QFileDialog, QDialog
+from PySide6.QtWidgets import QPushButton, QWidget, QLabel, QTextEdit, QTextBrowser, QMessageBox, QApplication, QFileDialog
 from PySide6.QtCore import QCoreApplication
 from PySide6.QtGui import Qt, QIcon
 from PIL import Image
@@ -41,12 +41,7 @@ class FirstWidget(QtWidgets.QWidget):
 class SecondWidget(QtWidgets.QWidget):
     def __init__(self, parent=None):
         super().__init__(parent=parent)
-
-        # layout = QtWidgets.QVBoxLayout(self)
-        # label1 = QLabel('1페이지', self)
-        # label1.setAlignment(Qt.AlignVCenter)
-        # label1.move(150, 40)
-
+        
         self.butt1 = QPushButton(self)
         self.butt1.setStyleSheet('image:url(./img/text_img.png);border:0px;')	
         self.butt1.setGeometry(50, 50, 400, 400) 
@@ -69,7 +64,6 @@ class SecondWidget(QtWidgets.QWidget):
     # 3 이미지 
     def change_stack2(self):
         self.parent().stack.setCurrentIndex(3)
-
 
     # 뒤로 가기 
     def change_stack3(self):
