@@ -308,7 +308,7 @@ class SecondWidget5(QtWidgets.QWidget):
     def pushButtonClicked(self):
         # self.FileOpen = QFileDialog.getOpenFileName(self, '열기', './')
 
-        self.FileOpen = QFileDialog.getOpenFileName(self, 'Open File', '','Images (*.bin)')
+        self.FileOpen = QFileDialog.getOpenFileName(self, '열기', '','Images (*.bin)')
         # self.files.setText(self.FileOpen[0])
         print(self.FileOpen[0])
     
