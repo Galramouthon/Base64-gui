@@ -156,7 +156,7 @@ class SecondWidget2(QtWidgets.QWidget):
         self.back.setGeometry(0, 0, 50, 50) 
         self.back.clicked.connect(self.change_stack1)
 
-        label1 = QLabel(' 중요한 이미지는 변환하지마세요 BASE64는 보안으로 매우 약합니다 간단한 텍스트 용도으로 사용하기 때문에 이미지 \n 변환은 권장하지 않습니다', self)
+        label1 = QLabel(' ', self)
         label1.move(125, 180)
 
         self.files = QPushButton("파일 선택", self)	
